@@ -20,9 +20,9 @@ setInterval(getClock, 1000);
 function onLoginSubmit(event) {
 	event.preventDefault();
 	loginForm.classList.add(HIDDEN_CLASSNAME);
-	const typedUsername = loginInput.value;
-	localStorage.setItem(USERNAME_KEY, typedUsername);
-	paintGreetings(typedUsername);
+	const username = loginInput.value;
+	localStorage.setItem(USERNAME_KEY, username);
+	paintGreetings(username);
 }
 
 function paintGreetings(username) {
